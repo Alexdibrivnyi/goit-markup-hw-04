@@ -96,11 +96,29 @@ ol {
   margin-right: 50px;
 }
 
-.header-mail::before {
-  content: ;
-  background-image: url(../images/inspiration.jpg);
-display: block;
-}
+/* .header-mail::before {
+  content: " ";
+  background-image: url(../images/envelope.svg);
+  margin-right: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+display: inline-block;
+width: 16px;
+height: 12px;
+fill: #757575;
+} */
+
+/* .header-tel::before {
+  content: '';
+  background-image: url(../images/smartphone.svg);
+  margin-right: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+display: inline-block;
+width: 10px;
+height: 16px;
+fill: #757575;
+} */
 
 .header-tel {
   font-weight: 500;
@@ -110,6 +128,14 @@ display: block;
   color: #757575;
   margin-left: 40px;
 }
+
+.header-icon {
+  margin-right: 10px;
+  /* #757575 */
+  fill: #757575;
+}
+
+
 
 .list {
   list-style: none;
@@ -124,15 +150,17 @@ display: block;
   color: #2196f3;
 }
 
+
+.header-tel:hover,
+.header-tel:focus,
 .header-mail:hover,
-.header-mail:focus {
+.header-mail:focus,
+.header-icon:hover,
+.header-icon:focus {
   color: #2196f3;
 }
 
-.header-tel:hover,
-.header-tel:focus {
-  color: #2196f3;
-}
+
 
 /* --------------------------------- MAIN ------------------------------------ */
 
@@ -166,39 +194,19 @@ display: block;
   border: 0px;
 }
 
-.portfolio-checklist {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.portfolio-list {
-  display: flex;
-}
-
-.portfolio-inside {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-
 .main-title {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-   url("../images/hero-image.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -251,11 +259,10 @@ display: block;
   height: 120px;
   justify-content: center;
   align-items: center;
-  background-color: #F5F4FA;
-border-radius: 4px;
-margin-bottom: 30px;
-}
-
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+} 
 
 
 .title {
@@ -271,7 +278,6 @@ margin-bottom: 30px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 
 /*-----------------TEAM-------------*/
 
@@ -298,36 +304,34 @@ margin-bottom: 30px;
   width: calc((100% - 90px) / 4);
 }
 
-
-
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-  }
+}
 
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .team-soc-icon {
-fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .team-soc-link:hover,
-.team-soc-link:focus  {
-  background-color: #2196F3;
+.team-soc-link:focus {
+  background-color: #2196f3;
   border-radius: 50px;
 }
 
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
-fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .team {
@@ -363,28 +367,25 @@ fill: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-
- .clients-list {
+.clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
- }
+}
 
- .clients-soc-link:hover,
- .clients-soc-link:focus {
-  fill: #2196F3;
-  border: 1px solid #2196F3;
- }
-
+.clients-soc-link:hover,
+.clients-soc-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
 
 /*--------------PORTFOLIO-----------------*/
-
 
 .all-list {
   display: flex;
@@ -392,6 +393,12 @@ fill: #FFFFFF;
   padding: 0px;
   gap: 30px;
   justify-content: center;
+}
+
+.item-list:hover,
+.item-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-list {
@@ -419,6 +426,13 @@ fill: #FFFFFF;
   padding-bottom: 94px;
 }
 
+.portfolio-checklist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
 
 .portfolio-list {
   margin-right: 8px;
@@ -426,6 +440,14 @@ fill: #FFFFFF;
 
 .portfolio-list:last-child {
   margin-right: 0px;
+}
+
+.portfolio-inside {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-button {
@@ -442,16 +464,14 @@ fill: #FFFFFF;
   border-radius: 4px;
   width: auto;
   padding: 6px 22px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
-
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-color: #FFFFFF;
-background-color: #2196f3;
+  color: #ffffff;
+  background-color: #2196f3;
 }
-
 
 /*--------------------------------FOOTER-----------------------------------*/
 
@@ -556,47 +576,44 @@ background-color: #2196f3;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-soc-item:hover,
 .footer-soc-item:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 50px;
 }
 
 .right-side-footer {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
-margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-container-left {
-display: flex;
-justify-content: flex-start;
-flex-direction: column
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .footer-container-right {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   width: 206px;
   height: 80px;
 }
 
-
-
 .footer-container {
   display: flex;
-    background: #2f303a;
+  background: #2f303a;
   margin: 0 auto;
   justify-content: flex-start;
   align-items: baseline;
