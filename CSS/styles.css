@@ -96,6 +96,12 @@ ol {
   margin-right: 50px;
 }
 
+.header-mail::before {
+  content: ;
+  background-image: url(../images/inspiration.jpg);
+display: block;
+}
+
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -157,6 +163,7 @@ ol {
   background-color: #2196f3;
   padding: 10px 32px;
   border-radius: 3px;
+  border: 0px;
 }
 
 .portfolio-checklist {
@@ -237,6 +244,19 @@ ol {
   color: #757575;
   max-width: 270px;
 }
+
+.benefits-icon-container {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+
 
 .title {
   margin-bottom: 50px;
@@ -394,105 +414,44 @@ fill: #FFFFFF;
   color: #757575;
 }
 
-.portfolio-button-1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8px;
-  /* shadow-middle */
-
-  border-radius: 4px;
-  padding: 6px 25px;
-}
-
-.portfolio-button-2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8px;
-  /* shadow-middle */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  padding: 6px 22px;
-}
-
-.portfolio-button-3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8px;
-  /* shadow-middle */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  padding: 6px 22px;
-}
-
-.portfolio-button-4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8px;
-  /* shadow-middle */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  padding: 6px 22px;
-}
-
-.portfolio-button-5 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  cursor: pointer;
-  border-radius: 4px;
-  width: auto;
-  padding: 6px 22px;
-}
-
 .portfolio-items {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.portfolio-button-1:hover,
-.portfolio-button:focus {
-  background: #2196f3;
+
+.portfolio-list {
+  margin-right: 8px;
 }
+
+.portfolio-list:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  width: auto;
+  padding: 6px 22px;
+  background-color: #F5F4FA;
+}
+
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+color: #FFFFFF;
+background-color: #2196f3;
+}
+
 
 /*--------------------------------FOOTER-----------------------------------*/
 
