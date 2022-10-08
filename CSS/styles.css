@@ -129,13 +129,15 @@ fill: #757575;
   margin-left: 40px;
 }
 
-.header-icon {
+/* .header-icon {
+  fill: currentColor;
   margin-right: 10px;
-  /* #757575 */
-  fill: #757575;
-}
+} */
 
-
+/* .header-icon:hover,
+.header-icon:focus {
+  fill: currentColor;
+} */
 
 .list {
   list-style: none;
@@ -154,9 +156,7 @@ fill: #757575;
 .header-tel:hover,
 .header-tel:focus,
 .header-mail:hover,
-.header-mail:focus,
-.header-icon:hover,
-.header-icon:focus {
+.header-mail:focus {
   color: #2196f3;
 }
 
@@ -579,11 +579,17 @@ fill: #757575;
   fill: #ffffff;
 }
 
-.footer-soc-item:hover,
-.footer-soc-item:focus {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: #2196f3;
   border-radius: 50px;
 }
+
+/* .footer-soc-item:hover,
+.footer-soc-item:focus {
+  background-color: #2196f3;
+  border-radius: 50px;
+} */
 
 .right-side-footer {
   font-family: "Roboto";
